@@ -73,7 +73,7 @@
 
       <div class="flex justify-between items-center">
         <div class="mt-3 sm:hidden">
-          <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Brand</a>
+          <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Dream Gloves</a>
           <p class="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Preline.</p>
         </div>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white w-full h-full">
-      <div class="flex gap-12">
-        <div class="canvas-wraper w-full h-[82vh]">
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="canvas-wraper w-full md:h-[82vh] h-[40vh]">
           <div class="canvas-area">
             <v-stage ref="stage" :config="stageSize">
                 <v-layer ref="layer">
@@ -19,11 +19,11 @@
           </div>
         </div>
         <!-- toolbar -->
-        <div class="w-full h-[80vh] overflow-y-auto">
+        <div class="w-full h-[80vh] overflow-y-auto p-3 border-t">
             <h3 class="mb-6 text-gray-900 text-2xl font-bold mt-5">Customize Options</h3>
-            <fwb-tabs v-model="activeTab" class="p-5">
+            <fwb-tabs v-model="activeTab" class="md:p-5 py-6">
                 <fwb-tab name="first" title="Base Options">
-                    <section class="pr-12 space-y-5">
+                    <section class="md:pr-12 space-y-5">
                         <div class="relative field-group border p-4 rounded-xl">
                             <label for="leather-option" class="w-full text-gray-700">Leather Option</label>
                             <ul class="grid w-full gap-4 md:grid-cols-2 grid-cols-1">
@@ -119,7 +119,6 @@
                     </section>
                 </fwb-tab>
             </fwb-tabs>
-  
         </div>
       </div>
     </div>
